@@ -48,38 +48,70 @@ h6 {
 	height: 100vh;
 }
 
-.boxing-image {
+.graphic-container {
 	display: flex;
 	position: relative;
 	background-color: aliceblue;
 }
 
-.boxing-image-text-container {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    justify-content: center;
+.logo-container {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	justify-content: center;
 	position: absolute;
-    top: 20vh;
-    height: 20vh;
+	top: 14.3vh;
+	height: 17vh;
 	width: 100%;
-    background-color: rgba(0,0,0,0.5)
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
-.boxing-image-text {
-    color: white;
-    font-size: 4rem;
-    font-weight: 700;
-    
+.logo-text {
+	color: #fffafa;
+	letter-spacing: 0.1rem;
+	font-size: 4rem;
+	font-weight: 700;
 }
 
-.fist-icon {
-    width: 5rem;
-    fill: white;
+.logo {
+	width: 5rem;
+	fill: #fff;
 }
 
-.sign-up-form {
+.sign-up-container {
 	display: flex;
 	flex-grow: 1;
-	background-color: antiquewhite;
+	flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+	flex: 1;
+}
+
+ul {
+    list-style-type: none;
+    font-weight: 300;
+}
+
+li {
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.sign-up-text {
+    margin-top: 3rem;
+}
+
+section {
+	flex: 1.2;
+	background-color: #f5f5f5;
+    border-top: 1px solid rgb(216, 216, 216);
+	box-shadow: 0px 16px 16px hsl(0deg 0% 0% / 0.4);
+}
+
+footer {
+	flex: 1;
 }
