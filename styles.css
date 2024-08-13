@@ -6,7 +6,7 @@
 
 * {
 	margin: 0;
-    font-family: "Oswald", sans-serif;
+	font-family: "Oswald", sans-serif;
 }
 
 body {
@@ -17,8 +17,7 @@ body {
 img,
 picture,
 video,
-canvas,
-svg {
+canvas {
 	display: block;
 	max-width: 100%;
 }
@@ -42,4 +41,45 @@ h6 {
 #root,
 #__next {
 	isolation: isolate;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+}
+
+.boxing-image {
+	display: flex;
+	position: relative;
+	background-color: aliceblue;
+}
+
+.boxing-image-text-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+	position: absolute;
+    top: 20vh;
+    height: 20vh;
+	width: 100%;
+    background-color: rgba(0,0,0,0.5)
+}
+
+.boxing-image-text {
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    
+}
+
+.fist-icon {
+    width: 5rem;
+    fill: white;
+}
+
+.sign-up-form {
+	display: flex;
+	flex-grow: 1;
+	background-color: antiquewhite;
 }
