@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Boxing gym</title>
+		<title>Hit & Fit Gym</title>
 		<link rel="stylesheet" href="styles.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +11,7 @@
 			href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="script.js" defer></script>
 	</head>
 	<body>
 		<div class="container">
@@ -30,23 +31,85 @@
 					</svg>
 					<span class="logo-text">HIT & FIT GYM</span>
 				</div>
+				<span class="photo-credit">
+					Photo by
+					<a href="https://unsplash.com/@5hadowknow5">Alex Alvarado</a> on
+					<a href="https://unsplash.com/">Unsplash</a>
+				</span>
 				<img src="/images/boxing.jpg" alt="boxing gym" />
 			</div>
 			<div class="sign-up-container">
-				<header>
+				<div class="upper-hero">
 					<ul>
-                        <li>Are you tired of feeling beat up by life?</li>
-                        <li>It's time to fight back with Hit & Fit Gym!</li>
-                        <li>Whether you're dodging deadlines or want to beat stress, we've got you covered.</li>
-                        <li class="sign-up-text">Sign up now and uppercut your way to peak fitness!</li>
-                    </ul>
-				</header>
-				<section>
+						<li>Are you tired of feeling beat up by life?</li>
+						<li>It's time to fight back with Hit & Fit Gym!</li>
+						<li>
+							Whether you're dodging deadlines or want to beat stress, we've got
+							you covered.
+						</li>
+						<li class="sign-up-text">
+							Punch in your details below to get started!
+						</li>
+					</ul>
+				</div>
 
-                </section>
-				<footer>
-                    <button>PUNCH IN</button>
-                </footer>
+				<div class="sign-up-form">
+					<form id="sign-up" action="#" action="post">
+						<div class="form">
+							<div class="form-left">
+								<label for="first_name">FIRST NAME</label>
+								<input
+									type="text"
+									id="first_name"
+									name="first_name"
+									minlength="2"
+									maxlength="15"
+									required
+								/>
+								<p></p>
+								<label for="email">EMAIL</label>
+								<input type="email" id="email" name="email" required />
+								<label for="password">PASSWORD</label>
+								<input
+									type="password"
+									id="password"
+									name="password"
+									minlength="5"
+									maxlength="15"
+									required
+								/>
+							</div>
+							<div class="form-right">
+								<label for="last_name">LAST NAME</label>
+								<input type="text" id="last_name" name="last_name" required />
+								<label for="phone_number">PHONE NUMBER</label>
+								<input
+									type="tel"
+									id="phone_number"
+									name="phone_number"
+									pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+									required
+								/>
+
+								<label for="confirm_password">CONFIRM PASSWORD</label>
+								<input
+									type="password"
+									id="confirm_password"
+									name="confirm_password"
+									minlength="5"
+									maxlength="15"
+									required
+								/>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="lower-hero">
+					<button type="submit" form="sign-up">CREATE ACCOUNT</button>
+					<span class="log-in"
+						>Already have an account? <a href="#">Log in</a></span
+					>
+				</div>
 			</div>
 		</div>
 	</body>
